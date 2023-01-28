@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	min-height: 100vh;
+	font-family: 'Nunito Sans', sans-serif;
+	width: 100vw;
+	background-color: rgb(205, 219, 223);
+	.main {
+		max-height: 100vh;
+
+
+		.header {
+			height: 60px;
+			background-color: white;
+			display: flex;
+			align-items: center;
+			justify-items: flex-start;
+			padding-left: 30px;
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+				rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+		}
+		.countryLoup {
+			height: 100px;
+			display: flex;
+			align-items: center;
+			margin-left: 30px;
+			margin-top: 30px;
+
+			.fa-magnifying-glass {
+				background-color: #fff;
+				height: 35px;
+				width: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			#country {
+				height: 31px;
+				width: 200px;
+				border-color: transparent;
+			}
+		}
+.wrapperCountries{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+
+		.countries {
+			min-height: 70vh;
+			max-width: 90vw;
+			background-color: white;
+			flex-wrap: wrap;
+			display: flex;
+			& > div {
+				padding: 5vh;
+				width: 200px;
+				height: 200px;
+			}
+		}
+}
+
+	}
+}

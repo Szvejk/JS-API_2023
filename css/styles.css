@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   min-height: 100vh;
   font-family: "Nunito Sans", sans-serif;
@@ -26,20 +30,36 @@ body .main .header {
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-body .main .countryLoup {
-  height: 100px;
+body .main .flexForChoice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+body .main .flexForChoice .countryLoup {
+  height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 30px;
+  margin-left: 90px;
   margin-top: 30px;
 }
-body .main .countryLoup .fa-magnifying-glass {
+body .main .flexForChoice .choose {
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  right: 100px;
+  top: 70px;
+  padding-left: 15px;
+}
+body .main .flexForChoice .fa-magnifying-glass {
   background-color: #fff;
-  height: 35px;
+  height: 54px;
   width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,8 +71,8 @@ body .main .countryLoup .fa-magnifying-glass {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .main .countryLoup #country {
-  height: 31px;
+body .main .flexForChoice #country {
+  height: 50px;
   width: 200px;
   border-color: transparent;
 }
